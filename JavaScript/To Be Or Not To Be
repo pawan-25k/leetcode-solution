@@ -1,0 +1,21 @@
+var expect = function(val) {
+    return {
+        toBe:function(valu){
+        if(valu===val){
+            return true
+        }else{
+            throw "Not Equal"
+        }
+        
+    },
+    notToBe: function (valu){
+        
+        if(valu!==val){
+            return true
+        }else{
+            throw "Equal"
+        }
+        
+    }
+    }
+};
