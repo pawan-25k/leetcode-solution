@@ -1,0 +1,12 @@
+var map = function(arr, fn) {
+       let  ReturnedArray=new Array();
+        for(let i=0;i<arr.length;i++){
+            let tf=fn(arr[i],i);
+            if(typeof tf === 'number'){
+                ReturnedArray.push(tf);
+            }else{
+                ReturnedArray.push(0);
+            } 
+        }
+        return ReturnedArray;
+};
