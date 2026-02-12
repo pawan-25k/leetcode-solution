@@ -1,4 +1,4 @@
-
+import java.util.*;
 class Solution {
     void segregate0and1(int[] arr) {
         // code here
@@ -20,5 +20,6 @@ class Solution {
          for(;j<countOne+countZero;j++){
             arr[j]=1;
         }
+        System.out.println(Arrays.toString(arr));
     }
 }
